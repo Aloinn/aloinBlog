@@ -19,7 +19,7 @@ a {
     position: relative;
     margin-top: 0px;
     margin-bottom: 0px;
-    height: 100%;
+    height: auto;
     background-color: #efefef; }
   .container .banner .banner-heading {
     padding-left: 5px;
