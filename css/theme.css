@@ -1,23 +1,32 @@
 * {
   margin: auto 0px;
-  color: #444444; }
+  color: #1a1629; }
 
 body {
   font-family: "Share Tech Mono", monospace;
   font-weight: 400;
-  background-color: #efefef; }
+  background-color: #0b0a0e; }
 
 a {
   text-decoration: none; }
 
 .container {
+  width: 1200px;
+  height: auto;
+  margin: auto;
   display: flex; }
-  .container .banner-heading {
+  .container header {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    background-color: #efefef; }
+  .container .banner .banner-heading {
     padding-left: 5px;
     padding-top: 3px;
-    background-color: #444444;
+    background-color: #1a1629;
     width: auto; }
-    .container .banner-heading p {
+    .container .banner .banner-heading p {
       font-family: "Kumar One", cursive;
       font-size: 1em;
       color: #efefef;
@@ -26,20 +35,40 @@ a {
     list-style-type: none;
     padding: 0px; }
     .container .banner ul .banner-link {
-      width: auto; }
+      width: auto;
+      padding: 2px 0px 2px 0px; }
       .container .banner ul .banner-link p {
         margin-left: 5px;
         letter-spacing: 1px;
         color: inherit; }
     .container .banner ul .banner-link:hover {
-      background-color: gray;
+      background-color: #4f6391;
       color: #efefef; }
   .container h1 {
     font-size: 1.6em;
-    font-family: "Kumar One", cursive; }
-  .container main {
-    background-color: pink;
-    flex: 1;
-    margin: auto; }
+    font-family: "Kumar One", cursive;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-top: 10px; }
+
+main {
+  background-color: #343650;
+  flex: 1;
+  margin: auto;
+  margin-top: 0px;
+  min-height: calc(100vh - 30px); }
+
+footer {
+  background-color: #1a1629;
+  padding: 10px 0px 10px 10px; }
+  footer p {
+    text-align: center;
+    color: #efefef;
+    letter-spacing: 1px; }
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%; } }
 
 /*# sourceMappingURL=theme.css.map */

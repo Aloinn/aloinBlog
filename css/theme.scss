@@ -1,6 +1,8 @@
 
-$font-color: #444444;
-
+$font-color: #1a1629;
+$body-color: #0b0a0e;
+$bg-color: #343650;
+$hl-color: #4f6391;
 $font-main: 'Share Tech Mono', monospace;
 $font-head: 'Kumar One', cursive;
 
@@ -9,7 +11,7 @@ $font-head: 'Kumar One', cursive;
 body{
  font-family: $font-main;
  font-weight: 400;
- background-color: #efefef;
+ background-color: $body-color;
 }
 // LIST
 
@@ -17,27 +19,38 @@ body{
 a{text-decoration: none;}
 ////// BANNER
 .container{
+  width:1200px;
+  height:auto;
+  margin:auto;
   display:flex;
-  .banner-heading{
-    padding-left: 5px;
-    padding-top: 3px;
-    //line-height: 0px;
-    background-color: $font-color;
-    width: auto;
-    p{
-      font-family: $font-head;
-      font-size: 1em;
-      color: #efefef;
-      letter-spacing: 1.5px;
-    }// end of p
-  }// end of banner heading
-
+  header{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height:100%;
+    background-color: #efefef;
+  }
   .banner{
+
+    .banner-heading{
+      padding-left: 5px;
+      padding-top: 3px;
+      //line-height: 0px;
+      background-color: $font-color;
+      width: auto;
+      p{
+        font-family: $font-head;
+        font-size: 1em;
+        color: #efefef;
+        letter-spacing: 1.5px;
+      }// end of p
+    }// end of banner heading
     ul{
       list-style-type: none;
       padding:0px;
       .banner-link{
         width:auto;
+        padding:2px 0px 2px 0px;
         p{
           margin-left:5px;
           letter-spacing: 1px;
@@ -45,7 +58,7 @@ a{text-decoration: none;}
         }
       }
       .banner-link:hover{
-        background-color: gray;
+        background-color: $hl-color;
         color:#efefef;
       }
     } // END UL
@@ -53,10 +66,38 @@ a{text-decoration: none;}
   h1{
     font-size:1.6em;
     font-family: $font-head;
+    letter-spacing: 2px;
+    margin-left:5px;
+    margin-right:10px;
+    padding-top:10px;
   } // END H1
-  main{
-    background-color: pink;
-    flex:1;
-    margin: auto;
-  } // END MAIN
 }// END OF CONTAINER
+
+
+//CONTENT START OF MAIN
+main{
+  .content-container{
+
+  }
+  .content-heading{
+
+  }
+  background-color: $bg-color;
+  flex:1;
+  margin: auto;
+  margin-top: 0px;
+  min-height:calc(100vh - 30px);
+}// END OF CONTENT AND MAIN
+footer{
+  background-color: $font-color;
+  padding: 10px 0px 10px 10px;
+  p{
+    text-align: center;
+    color: #efefef;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container{width:100%;}
+}
