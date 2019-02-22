@@ -1,0 +1,45 @@
+* {
+  margin: auto 0px;
+  color: #444444; }
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  background-color: #efefef; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  display: flex; }
+  .container .banner-heading {
+    padding-left: 5px;
+    padding-top: 3px;
+    background-color: #444444;
+    width: auto; }
+    .container .banner-heading p {
+      font-family: "Kumar One", cursive;
+      font-size: 1em;
+      color: #efefef;
+      letter-spacing: 1.5px; }
+  .container .banner ul {
+    list-style-type: none;
+    padding: 0px; }
+    .container .banner ul .banner-link {
+      width: auto; }
+      .container .banner ul .banner-link p {
+        margin-left: 5px;
+        letter-spacing: 1px;
+        color: inherit; }
+    .container .banner ul .banner-link:hover {
+      background-color: gray;
+      color: #efefef; }
+  .container h1 {
+    font-size: 1.6em;
+    font-family: "Kumar One", cursive; }
+  .container main {
+    background-color: pink;
+    flex: 1;
+    margin: auto; }
+
+/*# sourceMappingURL=theme.css.map */

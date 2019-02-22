@@ -1,0 +1,62 @@
+
+$font-color: #444444;
+
+$font-main: 'Share Tech Mono', monospace;
+$font-head: 'Kumar One', cursive;
+
+*{margin: auto 0px;color: $font-color;}
+
+body{
+ font-family: $font-main;
+ font-weight: 400;
+ background-color: #efefef;
+}
+// LIST
+
+// LINKS
+a{text-decoration: none;}
+////// BANNER
+.container{
+  display:flex;
+  .banner-heading{
+    padding-left: 5px;
+    padding-top: 3px;
+    //line-height: 0px;
+    background-color: $font-color;
+    width: auto;
+    p{
+      font-family: $font-head;
+      font-size: 1em;
+      color: #efefef;
+      letter-spacing: 1.5px;
+    }// end of p
+  }// end of banner heading
+
+  .banner{
+    ul{
+      list-style-type: none;
+      padding:0px;
+      .banner-link{
+        width:auto;
+        p{
+          margin-left:5px;
+          letter-spacing: 1px;
+          color:inherit;
+        }
+      }
+      .banner-link:hover{
+        background-color: gray;
+        color:#efefef;
+      }
+    } // END UL
+  }// END BANNER
+  h1{
+    font-size:1.6em;
+    font-family: $font-head;
+  } // END H1
+  main{
+    background-color: pink;
+    flex:1;
+    margin: auto;
+  } // END MAIN
+}// END OF CONTAINER
