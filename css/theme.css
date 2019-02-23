@@ -52,6 +52,9 @@ a {
     margin-right: 10px;
     padding-top: 10px; }
 
+#e404 {
+  text-align: center; }
+
 main {
   background-color: #343650;
   flex: 1;
@@ -69,6 +72,14 @@ main {
     font-weight: bold; }
   main .content-container a:hover {
     text-decoration: underline; }
+  main .content-container h2 {
+    text-align: center;
+    color: #efefef;
+    font-family: "Kumar One", cursive;
+    font-size: 3em;
+    margin-left: 20px;
+    line-height: 0px;
+    margin-top: 50px; }
   main .content-heading {
     flex: 1;
     background-color: #1a1629;

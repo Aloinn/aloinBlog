@@ -75,6 +75,7 @@ a{text-decoration: none;}
 
 
 //CONTENT START OF MAIN
+#e404{text-align: center;}
 main{
   .main-container{
     margin:25px;
@@ -87,6 +88,15 @@ main{
     }
     a{color: $hl-color;font-weight: bold;}
     a:hover{text-decoration: underline;}
+    h2{
+      text-align: center;
+      color:#efefef;
+      font-family: $font-head;
+      font-size:3em;
+      margin-left:20px;
+      line-height: 0px;
+      margin-top:50px;
+    }
   }
   .content-heading{
     flex:1;
