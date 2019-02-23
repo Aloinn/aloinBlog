@@ -58,6 +58,30 @@ main {
   margin: auto;
   margin-top: 0px;
   min-height: calc(100vh - 30px); }
+  main .main-container {
+    margin: 25px; }
+  main .content-container p {
+    color: #efefef;
+    margin: 20px;
+    letter-spacing: 0px; }
+  main .content-container a {
+    color: #4f6391;
+    font-weight: bold; }
+  main .content-container a:hover {
+    text-decoration: underline; }
+  main .content-heading {
+    flex: 1;
+    background-color: #1a1629;
+    padding-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    main .content-heading h2 {
+      color: #efefef;
+      font-family: "Kumar One", cursive;
+      letter-spacing: 2px;
+      margin-left: 20px;
+      font-size: 1em;
+      font-weight: 400; }
 
 footer {
   background-color: #1a1629;

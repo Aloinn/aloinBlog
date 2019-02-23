@@ -76,11 +76,32 @@ a{text-decoration: none;}
 
 //CONTENT START OF MAIN
 main{
+  .main-container{
+    margin:25px;
+  }
   .content-container{
-
+    p{
+      color:#efefef;
+      margin:20px;
+      letter-spacing: 0px;
+    }
+    a{color: $hl-color;font-weight: bold;}
+    a:hover{text-decoration: underline;}
   }
   .content-heading{
-
+    flex:1;
+    background-color: $font-color;
+    padding-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h2{
+      color: #efefef;
+      font-family: $font-head;
+      letter-spacing: 2px;
+      margin-left: 20px;
+      font-size: 1em;
+      font-weight: 400;
+    }
   }
   background-color: $bg-color;
   flex:1;
