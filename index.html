@@ -1,9 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
-permalink: /
 ---
 <div class="content-heading">
   <h2> welcome to my page </h2>
@@ -14,22 +10,37 @@ permalink: /
     progress for games and websites of my own creation.
   </p>
   <p>
-    Visit my collection to see my past <a href="#">game</a> projects and
+    Visit my collection to see my past <a href="{{site.url}}/games.html">game</a> projects and
     <a href="#">website</a> projects. I also produce as well so feel free to
     stop by my <a href="#">beats page</a> for tracks.
   </p>
   <p>
-    Check out the <a href="#">blog page</a> to see
+    Check out the <a href="{{site.url}}/blog.html">blog page</a> to see
     updates about my life and most recent progress for my current projects.
     If you'd like to get into contact with me,
-    feel free to visit my <a href="/contact.html">contacts</a> page.
+    feel free to visit my <a href="{{site.url}}/contact.html">contacts</a> page.
   </p>
    <p>
      Feel free to try out some of my games!
    </p>
-   <img class="container-image" src="/saboteur.png">
+   <img class="container-image" src="/saboteur.png" width="570px">
 </div>
 
 <div class="content-heading">
   <h2> news </h2>
 </div>
+
+{% for post in site.posts %}
+<div class="news-heading">
+  <a href="{{post.url}}"><h2>{{post.title}}</h2></a>
+</div>
+
+<div class="news-content">
+  <p class="news-date">
+  {{ post.date | date: "%m/%d/%Y" }}
+  </p>
+  <p>
+  {{ post.excerpt }}
+  </p>
+</div>
+{% endfor %}

@@ -3,6 +3,7 @@ $font-color: #1a1629;
 $body-color: #0b0a0e;
 $bg-color: #343650;
 $hl-color: #4f6391;
+$hl2-color: #7b8db7;
 $font-main: 'Share Tech Mono', monospace;
 $font-head: 'Kumar One', cursive;
 
@@ -80,13 +81,48 @@ main{
   .main-container{
     margin:25px;
   }
+  // NEWS HEADING
+  .news-heading{
+    flex:1;
+    background-color: $hl-color;
+    padding-top: 3px;
+    margin:20px;
+    h2{
+      color: #efefef;
+      font-family: $font-head;
+      letter-spacing: 2px;
+      margin-left: 20px;
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  } // END OF NEWS HEADING
+  .news-heading:hover{
+    background-color: $hl2-color;
+    margin: 20px 15px 20px 15px;
+  }
+  .news-content{ // NEWS CONTAINER
+    .news-date{
+      color: #efefef;
+      font-weight: 1000;
+      margin:-10px 40px 20px 40px;
+    }
+    p{
+      color:#efefef;
+      margin:15px 40px 10px 40px;
+      letter-spacing: 0px;
+    }
+    img{margin: 15px 0px 15px 0px;}
+    a{color: $hl-color;font-weight: bold;}
+    a:hover{text-decoration: underline;}
+  } // END OF NEWS CONTAINER
+
 
   .content-container{
     .container-image{
       margin-left:auto;
       margin-right:auto;
       display:block;
-      max-width: 570px;
+      max-width: 800px;
     }
     p{
       color:#efefef;
@@ -138,5 +174,5 @@ footer{
 
 @media only screen and (max-width: 1200px) {
   .container{width:100%;}
-  img{width:100%;}
+  .container-image{width:100%;}
 }
