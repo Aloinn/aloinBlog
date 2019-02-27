@@ -80,7 +80,14 @@ main{
   .main-container{
     margin:25px;
   }
+
   .content-container{
+    .container-image{
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+      max-width: 570px;
+    }
     p{
       color:#efefef;
       margin:20px;
@@ -131,4 +138,5 @@ footer{
 
 @media only screen and (max-width: 1200px) {
   .container{width:100%;}
+  img{width:100%;}
 }
