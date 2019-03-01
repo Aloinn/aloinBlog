@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="news-heading">
+  <a href="{{post.url}}"><h2>{{page.title}}</h2></a>
+</div>
+
+<div class="news-content">
+  <p class="news-date">
+  {{ page.date | date: "%m/%d/%Y" }}
+  </p>
+  <p>
+  {{ content }}
+  </p>
+</div>
