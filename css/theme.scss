@@ -21,6 +21,7 @@ a{text-decoration: none;}
 ////// BANNER
 .container{
   width:1200px;
+  max-width:1200px;
   height:auto;
   margin:auto;
   display:flex;
@@ -74,10 +75,15 @@ a{text-decoration: none;}
   } // END H1
 }// END OF CONTAINER
 
-
+.container-image{
+  margin:auto;
+  display:block;
+  max-width: 800px;
+}
 //CONTENT START OF MAIN
 #e404{text-align: center;}
 main{
+  flex:1;
   .main-container{
     margin:25px;
   }
@@ -116,14 +122,7 @@ main{
     a:hover{text-decoration: underline;}
   } // END OF NEWS CONTAINER
 
-
   .content-container{
-    .container-image{
-      margin-left:auto;
-      margin-right:auto;
-      display:block;
-      max-width: 800px;
-    }
     p{
       color:#efefef;
       margin:20px;

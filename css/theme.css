@@ -12,6 +12,7 @@ a {
 
 .container {
   width: 1200px;
+  max-width: 1200px;
   height: auto;
   margin: auto;
   display: flex; }
@@ -52,10 +53,16 @@ a {
     margin-right: 10px;
     padding-top: 10px; }
 
+.container-image {
+  margin: auto;
+  display: block;
+  max-width: 800px; }
+
 #e404 {
   text-align: center; }
 
 main {
+  flex: 1;
   background-color: #343650;
   flex: 1;
   margin: auto;
@@ -93,11 +100,6 @@ main {
     font-weight: bold; }
   main .news-content a:hover {
     text-decoration: underline; }
-  main .content-container .container-image {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 800px; }
   main .content-container p {
     color: #efefef;
     margin: 20px;
