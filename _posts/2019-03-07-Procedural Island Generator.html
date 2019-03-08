@@ -9,33 +9,41 @@ there's something about having your game build itself is so fascinating to watch
 For the next couple of weeks, I'll be posting more about procedural generation of
 game maps.
 </p>
-
+  <img class="container-image" title="sample island #1"src="{{site.url}}/images/2019-03-07/2.png" alt="sample generated island #1">
 <p>
 My first procedural generation project is a simple island generator
 </p>
-  <img class="container-image" src="{{site.url}}/images/2019-03-07/2.png" alt="sample generated island #1">
+
 <p>
 The island starts out 1x1 land tile. Land tiles are marked with the green block.
 All adjacent tiles next to the block are considered candidates for expansion.
 The candidates are marked with the black block.
 </p>
-<img class="container-image" src="{{site.url}}/images/2019-03-07/1.png" alt="initial island generated" width="100%">
+<img class="container-image" title="tiny island" src="{{site.url}}/images/2019-03-07/1.png" alt="initial island generated" width="100%">
 <p>Every round, half the number of
 tile locations candidates get randomly chosen. The chosen ones get to become land
 tiles. The new tiles do a quick surrounding search and place new potential candidate tiles.
 Repeat until satisfied!
 </p>
 
-<img class="container-image" src="{{site.url}}/images/2019-03-07/3.png" alt="sample island generated #2" width="100%">
+<img class="container-image" title="sample island 2"src="{{site.url}}/images/2019-03-07/3.png" alt="sample island generated #2" width="100%">
 <p>
 Controls:</br></br>
 Left click: Run a round of tile generation</br>
 Right click: Fix unchosen candidates inside island</br>
 Space bar: Reset generation</br>
+Scroll in/out: Zoom in/out</br>
 </p>
 <p>
 The first number on the top corner indicates whether a click is registered or not</br>
 The second number on the top corner indicates the amount of possible candidates for land tiles to generate on.
+</p>
+<p>
+</p>
+<img class="container-image" title="big island"src="{{site.url}}/images/2019-03-07/5.png" alt="sample island generated #2" width="100%">
+<p>
+  You can see that after a number or rounds, the island may grow
+  fairly large. It still retains the natural landmass vibe however!
 </p>
 <p>
 <a href="https://drive.google.com/open?id=1czZWcBOyv0M99tJlLawe9rlk-9Pt6rrY">Click here to download the executable file</a>
