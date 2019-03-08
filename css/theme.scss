@@ -7,6 +7,7 @@ $hl2-color: #7b8db7;
 $font-main: 'Share Tech Mono', monospace;
 $font-head: 'Kumar One', cursive;
 
+p{      letter-spacing: -1px;}
 *{margin: auto 0px;color: $font-color;}
 
 body{
@@ -15,13 +16,20 @@ body{
  background-color: $body-color;
 }
 // LIST
-
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    max-width: 700px;
+  }
 // LINKS
 a{text-decoration: none;}
 ////// BANNER
 .container{
   width:1200px;
-  max-width:1200px;
+  max-width:1000px;
   height:auto;
   margin:auto;
   display:flex;
@@ -74,12 +82,6 @@ a{text-decoration: none;}
     padding-top:10px;
   } // END H1
 }// END OF CONTAINER
-
-.container-image{
-  margin:auto;
-  display:block;
-  max-width: 800px;
-}
 //CONTENT START OF MAIN
 #e404{text-align: center;}
 iframe{
@@ -118,9 +120,7 @@ main{
     p{
       color:#efefef;
       margin:15px 40px 10px 40px;
-      letter-spacing: 0px;
     }
-    img{margin: 15px 0px 15px 0px;}
     a{color: $hl-color;font-weight: bold;}
     a:hover{text-decoration: underline;}
   } // END OF NEWS CONTAINER
@@ -129,7 +129,7 @@ main{
     p{
       color:#efefef;
       margin:20px;
-      letter-spacing: 0px;
+      letter-spacing: -1px;
     }
     a{color: $hl-color;font-weight: bold;}
     a:hover{text-decoration: underline;}
@@ -176,5 +176,7 @@ footer{
 
 @media only screen and (max-width: 1200px) {
   .container{width:100%;}
-  .container-image{width:100%;}
+  .container-image{
+    width:80%;
+  }
 }
