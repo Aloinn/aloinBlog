@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="content-heading">
+  <h2> games / projects </h2>
+</div>
+<div class="games-container">
+{% for post in site.posts %}
+<div class="games-heading">
+  <a href="{{post.url}}"><h2>{{post.title}}</h2>
+    <img style="width:90%;"class="container-image" src="{{site.url}}{{post.img}}"></a>
+</div>
+{% endfor %}
+</div>

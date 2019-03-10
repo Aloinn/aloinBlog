@@ -81,6 +81,25 @@ main {
     display: flex; }
   main .main-container {
     margin: 25px; }
+  main .games-container {
+    display: flex; }
+  main .games-heading {
+    width: 33%;
+    background-color: #4f6391;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 5px; }
+    main .games-heading h2 {
+      margin-top: 5px;
+      color: #efefef;
+      text-align: center;
+      letter-spacing: 0px;
+      font-size: 0.8em;
+      font-weight: 400; }
+    main .games-heading img {
+      margin-top: 5px; }
+  main .games-heading:hover {
+    background-color: #7b8db7; }
   main .news-heading {
     flex: 1;
     background-color: #4f6391;

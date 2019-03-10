@@ -3,26 +3,31 @@ layout: post
 title:  "Customizable Procedural Island Generator"
 date:   2019-03-07
 categories: updates
+img: "/images/2019-03-10/7.png"
 ---
-This is an expansion on the previous idea of procedural island generation,
-you may want to check out
-<a href="{{site.url}}/updates/2019/03/07/Procedural-Island-Generator.html">my previous post for procedural island generation</a>
-</p>
-<p>
+
 For this idea of procedural generation, there are customizable probability properties.
 Depending on the adjacent tiles of a candidate position,
 the probability of the tile actually getting placed may vary.
 </p>
+<span class="news-image-container">
+<img class="container-image" title="sample island #1"src="{{site.url}}/images/2019-03-10/1.png" alt="sample generated island #1" width="45%">
+<img class="container-image" title="sample island #2"src="{{site.url}}/images/2019-03-10/2.png" alt="sample generated island #1" width="45%">
+</span>
+<em>Two examples of procedurally generated islands with probability</em>
+
+<p>
+This is an expansion on the previous idea of procedural island generation,
+you may want to check out
+<a href="{{site.url}}/updates/2019/03/07/Procedural-Island-Generator.html">my previous post for procedural island generation</a>
+</p>
+
 <p>
 Side note: The beige color tiles are sand tiles that get added upon finalization.
 They do not represent the candidate positions. I really like them because they
 help establish that 'island' vibe
 </p>
-  <span class="news-image-container">
-  <img class="container-image" title="sample island #1"src="{{site.url}}/images/2019-03-10/1.png" alt="sample generated island #1" width="45%">
-  <img class="container-image" title="sample island #2"src="{{site.url}}/images/2019-03-10/2.png" alt="sample generated island #1" width="45%">
-  </span>
-  <em>Two examples of procedurally generated islands with probability</em>
+
 
 <p>
 In this version of my procedural generation project, the chance of a candidate position
