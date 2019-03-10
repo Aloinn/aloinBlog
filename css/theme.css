@@ -74,7 +74,8 @@ main {
   background-color: #343650;
   flex: 1;
   margin: auto;
-  margin-top: 0px; }
+  margin-top: 0px;
+  min-height: calc(100vh - 30px); }
   main .news-image-container {
     align-items: flex-start;
     display: flex; }
