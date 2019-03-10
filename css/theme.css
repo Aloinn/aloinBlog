@@ -95,7 +95,10 @@ main {
   main .news-heading:hover {
     background-color: #7b8db7;
     margin: 20px 15px 20px 15px; }
+  main .news-content b {
+    color: #4f6391; }
   main .news-content em {
+    letter-spacing: -1px;
     display: block;
     text-align: center;
     color: #4f6391; }

@@ -119,10 +119,14 @@ main{
     margin: 20px 15px 20px 15px;
   }
   .news-content{ // NEWS CONTAINER
+    b{
+      color: $hl-color;
+    }
     em{
+      letter-spacing: -1px;
       display:block;
       text-align: center;
-      color: $hl-color; 
+      color: $hl-color;
     }
     .news-date{
       color: #efefef;
