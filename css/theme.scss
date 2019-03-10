@@ -17,12 +17,13 @@ body{
 }
 // LIST
 img{
+    object-fit: contain;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top:10px;
+    margin-top:40px;
     margin-bottom:10px;
-    max-width: 700px;
+    max-width: 400px;
   }
 // LINKS
 a{text-decoration: none;}
@@ -30,14 +31,14 @@ a{text-decoration: none;}
 .container{
   width:1200px;
   max-width:1000px;
-  height:auto;
+  //height:auto;
   margin:auto;
   display:flex;
   header{
     position: relative;
     margin-top: 0px;
     margin-bottom: 0px;
-    height:auto;
+    //height:auto;
     background-color: #efefef;
   }
   .banner{
@@ -89,6 +90,12 @@ iframe{
 }
 main{
   flex:1;
+
+  .news-image-container{
+    align-items:flex-start;
+    display:flex;
+  }
+
   .main-container{
     margin:25px;
   }
@@ -112,6 +119,11 @@ main{
     margin: 20px 15px 20px 15px;
   }
   .news-content{ // NEWS CONTAINER
+    em{
+      display:block;
+      text-align: center;
+      color: $hl-color; 
+    }
     .news-date{
       color: #efefef;
       font-weight: 1000;
@@ -162,7 +174,7 @@ main{
   flex:1;
   margin: auto;
   margin-top: 0px;
-  min-height:calc(100vh - 30px);
+  //min-height:calc(100vh - 30px);
 }// END OF CONTENT AND MAIN
 footer{
   background-color: $font-color;
@@ -176,7 +188,5 @@ footer{
 
 @media only screen and (max-width: 1200px) {
   .container{width:100%;}
-  .container-image{
-    width:80%;
-  }
+
 }
