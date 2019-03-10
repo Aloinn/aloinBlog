@@ -21,7 +21,7 @@ img{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top:40px;
+    margin-top:20px;
     margin-bottom:10px;
     max-width: 400px;
   }
@@ -127,6 +127,7 @@ main{
       display:block;
       text-align: center;
       color: $hl-color;
+      margin-bottom: 10px;
     }
     .news-date{
       color: #efefef;
