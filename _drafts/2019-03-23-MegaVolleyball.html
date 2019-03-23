@@ -1,0 +1,128 @@
+---
+layout: post
+title:  "Customizable Procedural Island Generator"
+date:   2019-03-10
+categories: updates
+img: "/images/2019-03-10/7.png"
+---
+
+For this idea of procedural generation, there are customizable probability properties.
+Depending on the adjacent tiles of a candidate position,
+the probability of the tile actually getting placed may vary.
+</p>
+<span class="news-image-container">
+<img class="container-image" title="sample island #1"src="{{site.url}}/images/2019-03-10/1.png" alt="sample generated island #1" width="45%">
+<img class="container-image" title="sample island #2"src="{{site.url}}/images/2019-03-10/2.png" alt="sample generated island #1" width="45%">
+</span>
+<em>Two examples of procedurally generated islands with probability</em>
+
+<p>
+This is an expansion on the previous idea of procedural island generation,
+you may want to check out
+<a href="{{site.url}}/updates/2019/03/07/Procedural-Island-Generator.html">my previous post for procedural island generation</a>
+</p>
+
+<p>
+Side note: The beige color tiles are sand tiles that get added upon finalization.
+They do not represent the candidate positions. I really like them because they
+help establish that 'island' vibe
+</p>
+
+
+<p>
+In this version of my procedural generation project, the chance of a candidate position
+becoming a land tile is determined by it's surrounding tiles. Land tiles and candidate position
+tiles are both considered as neighbours.
+</p>
+<p>
+  Below is a diagram that represents a candidate position and it's adjacent tiles. White
+  squares represent <b>free spaces</b> to the candidate. Black squares represent
+  <b>neighbouring squares</b> to the candidate
+</p>
+<span class="news-image-container">
+  <img class="container-image" title="one sided piece" src="{{site.url}}/images/2019-03-10/e1.png" alt="initial island generated" width="20%">
+  <img class="container-image" title="corner piece" src="{{site.url}}/images/2019-03-10/e2.png" alt="initial island generated" width="20%">
+  <img class="container-image" title="line piece" src="{{site.url}}/images/2019-03-10/e3.png" alt="initial island generated" width="20%">
+  <img class="container-image" title="crevice piece" src="{{site.url}}/images/2019-03-10/e4.png" alt="initial island generated" width="20%">
+</span>
+  <em>
+    from left to right: 'one sided' piece, 'corner' piece, 'line' piece, 'crevice' piece
+  </em>
+<p>
+  If a candidate position has one side where it meets a neightbour, and three sides where it
+  does not meet neither a land tile nor a candidate position tile, it is considered to be a 'one side' piece.<b> Refer image 1</b>
+</p>
+<p>
+  If a candidate position has two sides where it meets a neightbour, it may fall under one of two categories,
+  either a 'line' piece or 'corner' piece.
+</p>
+<p>
+  A piece is a corner piece when the neighbours are on adjacent sides
+  of the candidate. <b> Refer image 2</b>
+</p>
+<p>
+  A piece is a line piece when the neighbours are on opposite sides
+  of the candidate. <b> Refer image 3</b>
+</p>
+<p>
+  A piece is a crevice piece when there are three neighbours and one free side.
+  <b> Refer image 4</b>
+</p>
+<p>
+  The probability manipulation of each type of candidate peace results in different types of islands
+  For example, if there is a low probability of 'one-sided' pieces converting to land tiles, this will
+  result in minimal protruding land pieces.
+</p>
+<span class="news-image-container">
+  <img class="container-image" title="land mass 1" src="{{site.url}}/images/2019-03-10/3.png" alt="initial island generated" width="45%">
+  <img class="container-image" title="land mass 2" src="{{site.url}}/images/2019-03-10/4.png" alt="initial island generated" width="45%">
+  </span>
+  <em>
+    Examples of solid well shaped islands
+  </em>
+<p>
+  Contrasting that, if there is a high probability of 'one-sided' pieces converting to land tiles,
+  this will result in an island with many <b>peninsulas</b>. They will also have very erratic shapes.
+</p>
+<span class="news-image-container">
+  <img class="container-image" title="peninsula land mass 1" src="{{site.url}}/images/2019-03-10/5.png" alt="initial island generated" width="45%">
+  <img class="container-image" title="peninsula land mass 2" src="{{site.url}}/images/2019-03-10/6.png" alt="initial island generated" width="45%">
+  </span>
+  <em>
+    Examples of islands with alot of peninsulas
+  </em>
+  <div class="news-heading">
+    <h2>Controls</h2>
+  </div>
+<p>
+<b>Left click:</b> Run a round of tile generation</br>
+<b>Right click:</b> Fix unchosen candidates inside island</br>
+<b>Space bar:</b> Reset generation</br>
+<b>Scroll in/out:</b> Zoom in/out</br>
+</br>
+<b>1:</b> +10% probability for one-sided pieces</br>
+<b>2:</b> +10% probability for corner pieces</br>
+<b>3:</b> +10% probability for line pieces</br>
+<b>4:</b> +10% probability for crevice pieces</br></br>
+<b>Shift + 1:</b> -10% probability for one-sided pieces</br>
+<b>Shift + 2:</b> -10% probability for corner pieces</br>
+<b>Shift + 3:</b> -10% probability for line pieces</br>
+<b>Shift + 4:</b> -10% probability for crevice pieces</br>
+</p>
+<p>
+The first number on the top corner indicates whether a click is registered or not</br></br>
+The second number on the top corner indicates the amount of possible candidates for land tiles to generate on.</br></br>
+The numbers below the potential candidates show the probability of each piece type spawning
+</p>
+<p>
+</p>
+<img class="container-image" title="Aloon island" src="{{site.url}}/images/2019-03-10/7.png" alt="sample island generated #2" width="100%">
+<em>
+  Aloon island
+</em>
+<p>
+  May start lagging when the island gets too big. Wear a helmet!
+</p>
+<p>
+<a href="https://drive.google.com/open?id=1uEWsYXIFtb3YjAePP5a1OgwP09mEXqPi">Click here to download the executable file</a>
+</p>
