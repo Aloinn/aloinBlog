@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "Pong in JavaScript"
+date:   2019-03-23
+categories: updates
+img: "/images/2019-03-23/1.png"
+---
+I Recently started learning JS to replace GML. There are many many similarities
+between the two languages which made picking up JavaScript really easy.
+GML is too limitted as a language, being only usable in Gamemaker Studio.
+Here's my first JavaScript project, PONG.</p>
+<canvas id="myCanvas" width ="500" height="500">
+</canvas><p>
+<script src="/pong.js"></script>
+<em>Play my version of pong!</em>
+
+
+<div class="news-heading">
+  <h2>Controls</h2>
+</div>
+<p>
+<b>Left arrow:</b> Move left</br>
+<b>Right arrow:</b> Move right</br>
+<b>Shift:</b> New game</br>
+
+</p>
+<div class="news-heading">
+  <h2>AI Explained</h2>
+</div>
+<p>
+How the AI for my version of pong works is that I measure
+the cycles it will take before the ball reaches the other paddle.
+Afterwards, the # of cycles is used to calculate how much horizontal distance the
+ball will cover in total.
+</br></br>
+<b>If the ball's horizontal speed + ball's x coorinate is still in canvas</b>
+</br>
+The AI paddle will go to the position of horizontal speed + ball's x coordinate
+</br></br>
+<b>OTHERWISE</b>
+</br>
+If the ball is going to bounce off a wall. The horizontal distance is divided by canvas width.
+</br></br>
+<b>If the floored value is EVEN, (Will bounce off walls odd number of times)</b></br>
+it will meet the AI at a distance from the side the ball is currently moving away from
+</br></br>
+<b>If the floored value is ODD, (Will bounce off walls even number of times</b></br>
+it will meet the AI at a distance from the side the ball is currently moving towards
+</br></br>
+The said distance is the remainder after dividing the total distance travelled by the canvas width.
+</br></p>
+<p>

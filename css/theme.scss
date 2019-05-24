@@ -7,6 +7,12 @@ $hl2-color: #7b8db7;
 $font-main: 'Share Tech Mono', monospace;
 $font-head: 'Kumar One', cursive;
 
+i{
+    color: $hl-color;
+}
+
+canvas { background: #eee; display: block; margin: 0 auto; }
+
 p{      letter-spacing: -1px;}
 *{margin: auto 0px;color: $font-color;}
 

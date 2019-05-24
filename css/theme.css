@@ -4,7 +4,10 @@ p {
 * {
   margin: auto 0px;
   color: #1a1629; }
-
+canvas { background: #eee; display: block; margin: 0 auto; }
+i{
+    color: $hl-color;
+}
 body {
   font-family: "Share Tech Mono", monospace;
   font-weight: 400;
